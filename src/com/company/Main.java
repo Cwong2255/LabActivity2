@@ -21,6 +21,7 @@ public class Main {
     public static void csvSorter() throws Exception {
         Scanner sc = new Scanner(new File("input1.txt"));
         PrintStream ps = new PrintStream(new File("output1.txt"));
+        //while loop to read each line in the file and sort the strings by alphabetical order
         while (sc.hasNextLine()) {
             String fileLine = sc.nextLine();
             String[] newArr = fileLine.split(",");
@@ -32,6 +33,7 @@ public class Main {
     public static void mathCalculations() throws Exception {
         Scanner sc = new Scanner((new File("input2.txt")));
         PrintStream ps = new PrintStream(new File("output2.txt"));
+        //while loop to loop through the file and convert each number found
         while (sc.hasNextInt()) {
             int tempFahrenheit = sc.nextInt();
             int tempCelsius = Math.round((((tempFahrenheit - 32) * 5) / 9));
