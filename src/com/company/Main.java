@@ -25,7 +25,7 @@ public class Main {
             String fileLine = sc.nextLine();
             String[] newArr = fileLine.split(",");
             Arrays.sort(newArr);
-            ps.println(String.join("", newArr));
+            ps.println(String.join(" ", newArr));
         }
     }
 
